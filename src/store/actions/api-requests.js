@@ -5,7 +5,7 @@ export default {
     commit
   }) {
     try {
-      const products = await axios('http://localhost:3000/products', {
+      const products = await axios('https://my-json-server.typicode.com/TSergey123/mockjson/products', {
         method: 'GET',
       });
       commit('SET_PRODUCTS_TO_STATE', products.data);
